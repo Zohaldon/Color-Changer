@@ -1,0 +1,99 @@
+/*------------------------Pyramid css------------------*/
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotateY(0); }
+	to { -webkit-transform: rotateY(360deg); }
+}
+
+.pyramid-gyro {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -100px;
+	-webkit-perspective: 1000px;
+	-webkit-perspective-origin: 50% 100px;
+}
+.pyramid-axis {
+	position: relative;
+	width: 200px;
+	-webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 16s infinite linear;
+}
+
+.pyramid-wall {
+	position: absolute;
+  border: 100px solid transparent ;
+}
+
+.front {
+  bottom: -20px;
+  border-bottom: 200px solid var(--pyramid-color);
+  opacity: 0.6;
+	-webkit-transform: translateZ(25px) rotateX(30deg);
+}
+.back {
+  bottom: -20px;
+  border-bottom: 200px solid var(--pyramid-color);
+  opacity: 0.6;
+	-webkit-transform: translateZ(-25px) rotateY(180deg) rotateX(30deg);
+}
+.left {
+  bottom: -20px;
+  left: 75px;
+  border-bottom: 200px solid var(--pyramid-color);
+  opacity: 0.6;
+	-webkit-transform: rotateY(270deg) translateX(-100px) rotateX(30deg);
+	-webkit-transform-origin: center left;
+}
+.right {
+  bottom: -40px;
+  right: 150px;
+  border-bottom: 200px solid var(--pyramid-color);
+  opacity: 0.6;
+  -webkit-transform: rotateY(-270deg) translateX(100px) rotateX(30deg);
+	-webkit-transform-origin: top right;
+}
+.bottom {
+  width: 200px;
+  height: 200px;
+  background-color: var(--pyramid-color);
+  -webkit-transform: rotateX(90deg) translateY(100px);
+	-webkit-transform-origin: bottom center;
+}
+.shadow {
+  position: absolute;
+  top: 250px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 50px 100px rgba(0,0,0,0.5);
+  -webkit-transform: rotateX(90deg) translateX(100px);
+}
+
+.fyi {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 250px;
+  color: #fff;
+}
+ul {
+  padding: 1em 0 0 2em;
+}
+li {
+  line-height: 24px;
+}
+
+/*------------------Page css--------------------*/
+p {
+  margin-top: 20%;
+  text-align: center;
+}
+
+span {
+  color: red;
+}
+
+body {
+  background: #C6FFDD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
