@@ -4,3 +4,6 @@ Color Changer is a JavaScript based project which can change color of 3D floatin
 
 ## Initial Screen
 <img src="screenshot/1.PNG"><br/>
+
+## Output after uttering "Green"
+<img src="screenshot/2.PNG"><br/>
