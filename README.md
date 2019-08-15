@@ -7,3 +7,13 @@ Color Changer is a JavaScript based project which can change color of 3D floatin
 
 ## Output after uttering "Green"
 <img src="screenshot/2.PNG"><br/>
+pyramid changes to green.
+
+## Recognition fails
+<img src="screenshot/4.PNG"><br/>
+
+## Blue Recognition success 
+<img src="screenshot/3.PNG"><br/>
+
+## Black Recognition success 
+<img src="screenshot/5.PNG"><br/>
